@@ -31,5 +31,7 @@ JSON з полями: business_name, business_type, city, instagram, facebook, t
   "critical_issues": [{"issue":"string","impact":"string","severity":"low|medium|high|critical"}],
   "opportunities": [{"opportunity":"string","expected_result":"string","effort":"low|medium|high","timeframe":"string"}],
   "score": { "overall": 0, "max": 100, "breakdown": {"presence":0,"engagement":0,"content":0,"consistency":0} },
+  "contradictions": ["рядок що суперечить позитивному висновку"],
+  "key_risk": "головний ризик для цього SMM-каналу",
   "for_synthesizer": "string — 3-4 речення ключових інсайтів"
 }
