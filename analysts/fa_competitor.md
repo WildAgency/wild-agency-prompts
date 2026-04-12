@@ -27,5 +27,7 @@ Required JSON structure:
   "critical_issues": [{"issue": "", "severity": "critical|high|medium", "impact": ""}],
   "opportunities": [{"opportunity": "", "effort": "low|medium|high", "timeframe": "", "expected_result": ""}],
   "score": {"overall": 0, "max": 100, "breakdown": {"positioning": 0, "differentiation": 0, "competitiveness": 0}},
+  "contradictions": ["fact that contradicts a positive conclusion"],
+  "key_risk": "main risk or weakness found in competitor analysis",
   "for_synthesizer": "key insight"
 }
