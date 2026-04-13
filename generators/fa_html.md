@@ -166,6 +166,7 @@
 | 12 | competitive | Конкуренти | competitive.competitors.length > 0 |
 | 13 | strengths | Сильні сторони | strengths.length > 0 |
 | 14 | critical_gaps | Критичні проблеми | critical_gaps.length > 0 |
+| 14.5 | contradictions | Ризики та суперечності | contradictions.items.length > 0 |
 | 15 | smm_hypothesis | SMM гіпотеза | growth_hypotheses.smm існує |
 | 16 | seo_hypothesis | SEO гіпотеза | growth_hypotheses.seo існує |
 | 17 | ads_hypothesis | Реклама гіпотеза | growth_hypotheses.ads існує |
@@ -283,6 +284,27 @@
   </div>
 </section>
 ```
+
+### Contradictions Block (сторінка 14.5)
+```html
+<section class="page section" id="contradictions">
+  <div class="container">
+    <div class="section-header">
+      <div class="label">Ризики та суперечності</div>
+      <h2>Що треба знати до запуску</h2>
+    </div>
+    [для кожного item в contradictions.items (топ 6):]
+    <div class="insight card mb-16 [card-danger якщо type=risk, card-warning якщо type=contradiction]">
+      <div class="insight-icon">[⚠️ якщо contradiction, 🔴 якщо risk]</div>
+      <div>
+        <div class="insight-label">[item.agent] · [Суперечність / Ризик]</div>
+        <p class="insight-text">[item.text]</p>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
 
 ### Hypothesis Block (сторінки 15-20)
 ```html
