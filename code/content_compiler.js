@@ -485,7 +485,7 @@ const contradictions = {
   smm_key_risks:       safe_arr(safe_get(smm, 'key_risks') || safe_get(smm, 'key_risk')).slice(0, 3),
   comp_contradictions: safe_arr(safe_get(comp, 'contradictions')).slice(0, 5),
   comp_key_risks:      safe_arr(safe_get(comp, 'key_risks') || safe_get(comp, 'key_risk')).slice(0, 3),
-  combined: [
+  items: [
     ...safe_arr(safe_get(smm,  'contradictions')).map(c => ({
       agent: 'SMM', type: 'contradiction',
       text: typeof c === 'string' ? c : (c.text || c.issue || c.contradiction || ''),
