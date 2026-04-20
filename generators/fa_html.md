@@ -72,7 +72,7 @@
     "heading": "Space Grotesk",
     "body": "Inter"
   },
-  "css_file": "https://raw.githubusercontent.com/WildAgency/wild-agency-prompts/main/styles/screen.css",
+  "css_file": "https://cdn.jsdelivr.net/gh/WildAgency/wild-agency-prompts@main/styles/screen.css",
   "tone": "direct, data-driven, без маркетингових кліше",
   "forbidden_words": ["ексклюзивний", "унікальний", "найкращий", "революційний",
                       "синергія", "екосистема", "топ", "хайп", "тренд"],
@@ -429,7 +429,7 @@
 ### Обов'язково
 - HTML валідний, без незакритих тегів
 - Всі class="" беруться з screen.css (не вигадуй нові)
-- Посилання на CSS: `https://raw.githubusercontent.com/WildAgency/wild-agency-prompts/main/styles/screen.css`
+- Посилання на CSS: `https://cdn.jsdelivr.net/gh/WildAgency/wild-agency-prompts@main/styles/screen.css`
 - Google Fonts підключені в `<head>` (Space Grotesk + Inter)
 - Mobile-first верстка (CSS вже адаптивний)
 - `meta name="robots" content="noindex, nofollow"` — завжди
