@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>Гелесвіт — Скрипт презентації</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{background:#0D0D0D;color:#fff;font-family:Inter,-apple-system,Arial,sans-serif;font-size:17px;line-height:1.75;padding:20px 18px 100px;max-width:680px;margin:0 auto}
+.hdr{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:28px;padding-bottom:14px;border-bottom:1px solid #2A2A2A}
+.logo{font-weight:800;font-size:14px;letter-spacing:3px;text-transform:uppercase}.logo span{color:#86EF0A}
+.badge{background:rgba(134,239,10,.1);border:1px solid rgba(134,239,10,.3);color:#86EF0A;font-size:11px;font-weight:700;padding:4px 10px;border-radius:100px;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+.biz{font-size:12px;color:#505050;margin-top:5px}
+.sec{margin-bottom:40px}
+.lbl{font-size:10px;font-weight:700;color:#86EF0A;letter-spacing:.18em;text-transform:uppercase;margin-bottom:12px}
+h2{font-size:21px;font-weight:800;color:#fff;margin-bottom:16px;line-height:1.2}
+p{color:#D0D0D0;margin-bottom:12px}p b{color:#fff}p em{color:#86EF0A;font-style:normal}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px}
+.stat{background:#141414;border:1px solid #2A2A2A;border-radius:12px;padding:14px 16px}
+.sv{font-size:28px;font-weight:900;line-height:1;margin-bottom:4px}
+.sv.bad{color:#FF4444}.sv.warn{color:#FFB800}.sv.good{color:#86EF0A}
+.sl{font-size:11px;color:#606060;text-transform:uppercase;letter-spacing:.07em}
+.issue{border-left:3px solid #FF4444;background:rgba(255,68,68,.05);padding:12px 16px;border-radius:0 10px 10px 0;margin-bottom:10px}
+.itag{font-size:10px;font-weight:700;color:#FF4444;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
+.issue p{margin:0;font-size:15px;color:#E0E0E0}
+.offer{background:#0D1A00;border:1px solid rgba(134,239,10,.2);border-radius:14px;padding:16px 18px;margin-bottom:12px}
+.oname{font-weight:700;color:#fff;font-size:16px}
+.oprice{color:#86EF0A;font-size:20px;font-weight:900;margin:3px 0 6px}
+.odesc{font-size:14px;color:#909090;line-height:1.55}
+.roi{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin:16px 0}
+.ri{background:#141414;border-radius:12px;padding:14px 10px;text-align:center}
+.rv{font-size:22px;font-weight:900;color:#86EF0A;line-height:1;margin-bottom:4px}
+.rl{font-size:10px;color:#606060;text-transform:uppercase;letter-spacing:.06em}
+.tip{background:#1A1A1A;border-radius:10px;padding:12px 16px;font-size:14px;color:#707070;margin:14px 0}
+.tip b{color:#A0A0A0}
+.div{height:1px;background:#1E1E1E;margin:32px 0}
+.cta{background:#86EF0A;border-radius:16px;padding:22px;text-align:center;margin-top:32px}
+.ctam{font-size:22px;font-weight:900;color:#000;text-transform:uppercase;letter-spacing:.04em;margin-bottom:6px}
+.ctas{font-size:14px;color:rgba(0,0,0,.6);line-height:1.5}
+.nav{position:fixed;bottom:0;left:0;right:0;background:rgba(13,13,13,.95);backdrop-filter:blur(10px);border-top:1px solid #1E1E1E;padding:12px 18px;display:flex;justify-content:space-between;align-items:center}
+.dots{display:flex;gap:8px;align-items:center}
+.nd{width:7px;height:7px;border-radius:50%;background:#2A2A2A;cursor:pointer;border:none;transition:.15s}
+.nd.on{background:#86EF0A;width:18px;border-radius:4px}
+.step{font-size:12px;color:#505050;font-weight:600}
+</style>
+</head><body>
+
+<div class="hdr">
+<div><div class="logo">Wild<span>&#8226;</span>Agency</div><div class="biz">Скрипт &mdash; Гелесвіт</div></div>
+<span class="badge">Full Audit</span>
+</div>
+
+<div class="sec" id="b1">
+<div class="lbl">01 / Вступ</div>
+<h2>Ми дослідили ваш цифровий бізнес</h2>
+<p>Wild Agency провела <b>повний digital-аудит</b> мережі Гелесвіт &mdash; 7 магазинів у Львові. Проаналізували Instagram, Facebook, Google Maps, сайт, відгуки, конкурентів.</p>
+<p>Ось що ми знайшли &mdash; і де ваші реальні <em>точки зросту</em>.</p>
+<div class="stats">
+<div class="stat"><div class="sv good">17 353</div><div class="sl">підписників Instagram</div></div>
+<div class="stat"><div class="sv warn">4.4 &#9733;</div><div class="sl">Google Maps</div></div>
+<div class="stat"><div class="sv bad">0.64%</div><div class="sl">рівень ER</div></div>
+<div class="stat"><div class="sv bad">6/7</div><div class="sl">маг. без Google</div></div>
+</div></div>
+
+<div class="div"></div>
+
+<div class="sec" id="b2">
+<div class="lbl">02 / Проблеми</div>
+<h2>Що зараз заважає бізнесу</h2>
+<div class="issue"><div class="itag">Instagram &bull; Низький ER</div><p><b>17 353 підписники &mdash; нульова конверсія.</b> Великодняний пост зібрав 3 лайки. Відео з розпаковкою &mdash; 309 переглядів. Підписники є, покупці &mdash; ні.</p></div>
+<div class="issue"><div class="itag">Google Maps &bull; Репутація</div><p><b>3 відгуки 1&#9733; &mdash; всі про поведінку персоналу. Жодної відповіді.</b> Один клієнт написав: &laquo;пішла навпроти за покупками&raquo;. Конкурент отримав цього покупця.</p></div>
+<div class="issue"><div class="itag">Google Maps &bull; Невидимі точки</div><p><b>6 з 7 магазинів без карток Google.</b> Коли людина шукає &laquo;косметика для нігтів Львів&raquo; &mdash; вона не знаходить 6 ваших точок.</p></div>
+<div class="issue"><div class="itag">Facebook &bull; Мертва платформа</div><p><b>65 підписників при 17 353 в Instagram.</b> Різниця в 267 разів. Ціла аудиторія не задіяна.</p></div>
+<div class="tip"><b>Пауза:</b> запитайте &mdash; яка з цих проблем здається найбільш критичною? Слухайте відповідь і адаптуйте дальше.</div>
+</div>
+
+<div class="div"></div>
+
+<div class="sec" id="b3">
+<div class="lbl">03 / Пропозиція</div>
+<h2>Що ми пропонуємо</h2>
+<div class="offer"><div class="oname">Google Ads</div><div class="oprice">від $300 / міс</div><div class="odesc">Стратегічні кампанії для залучення нових клієнтів. Таргетинг по Львову, аналітика, звіт щомісяць.</div></div>
+<div class="offer"><div class="oname">SMM Instagram</div><div class="oprice">від $300 / міс</div><div class="odesc">Конверсійний контент, конкурси, воронка. Ціль: ER з 0.64% до 6% за 90 днів. Підписник стає покупцем.</div></div>
+<div class="offer"><div class="oname">SEO + Google Maps</div><div class="oprice">від $250 / міс</div><div class="odesc">Підключення 6 точок, відповіді на відгуки, збір нових позитивних. SEO-оптимізація сайту.</div></div>
+<div class="tip"><b>Тут:</b> не поспішайте. Якщо клієнт фокусується на одному &mdash; говоріть про нього детальніше.</div>
+</div>
+
+<div class="div"></div>
+
+<div class="sec" id="b4">
+<div class="lbl">04 / Результат</div>
+<h2>За 90 днів</h2>
+<div class="roi">
+<div class="ri"><div class="rv">6%</div><div class="rl">ER Instagram</div></div>
+<div class="ri"><div class="rv">800+</div><div class="rl">відвідань/міс.</div></div>
+<div class="ri"><div class="rv">7/7</div><div class="rl">точок Google</div></div>
+</div>
+<p>Інвестиція: <b>від $600/міс.</b> Безкоштовна зустріч 30&nbsp;хв &mdash; покажемо кейси вашої ніші.</p>
+<div class="cta"><div class="ctam">Готові почати?</div><div class="ctas">Безкоштовна зустріч 30&nbsp;хв<br>t.me/wildagency_bot</div></div>
+</div>
+
+<div class="nav"><div class="dots">
+<button class="nd on" onclick="g('b1')"></button>
+<button class="nd" onclick="g('b2')"></button>
+<button class="nd" onclick="g('b3')"></button>
+<button class="nd" onclick="g('b4')"></button>
+</div><span class="step" id="sl">01/04</span></div>
+<script>
+const S=['b1','b2','b3','b4'],D=document.querySelectorAll('.nd'),L=document.getElementById('sl');
+function g(id){document.getElementById(id).scrollIntoView({behavior:'smooth'});}
+window.addEventListener('scroll',()=>{let c=0;S.forEach((id,i)=>{const e=document.getElementById(id);if(e&&e.getBoundingClientRect().top<=80)c=i;});D.forEach((d,i)=>d.classList.toggle('on',i===c));L.textContent='0'+(c+1)+'/04';});
+</script>
+</body></html>
